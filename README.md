@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
-A **Jupyter Notebook project** that helps users navigate a simplified campus using a **10×10 grid** and **reinforcement learning** algorithms such as **Q-Learning**, **SARSA**, and **Monte Carlo Control**. This bot determines the **shortest and optimal paths** between grid locations.
+A **Jupyter Notebook project** that helps users navigate a simplified campus using a **10×10 grid** and **reinforcement learning** algorithms such as **Q-Learning**, **SARSA**, **TD(λ)**, and **Monte Carlo Control**. This bot determines the **shortest and optimal paths** between grid locations.
 
 ---
 
@@ -23,7 +23,7 @@ The **Campus Navigation Bot** operates on a **10×10 grid environment** represen
 It uses **reinforcement learning techniques** to learn the most efficient path between a **START** and **GOAL** position.
 
 ### Key Points
-- Supports multiple algorithms: **Q-Learning**, **SARSA**, and **Monte Carlo Control**.  
+- Supports multiple algorithms: **Q-Learning**, **SARSA**, **TD(λ)**, and **Monte Carlo Control**.  
 - Visualizes the **grid**, **path**, and **value distribution** using **matplotlib** and **seaborn**.  
 - Computes **total cost**, **number of steps**, and **optimal path**.
 
@@ -31,11 +31,11 @@ It uses **reinforcement learning techniques** to learn the most efficient path b
 
 ## Features
 - Interactive **Jupyter Notebook** with clean modular code.  
-- Automatic calculation of **optimal path** in the 10×10 map.  
+- Automatic calculation of **optimal path** in the 10×10 environment.  
 - Visual outputs:
-  - Navigation path visualization using arrows or color grid
+  - Navigation path visualization using arrows or colored grid
   - State-value heatmaps
-  - Comparison graphs for steps and cost
+  - Comparison graphs of cost and steps for different algorithms
 
 ---
 
@@ -73,37 +73,27 @@ It uses **reinforcement learning techniques** to learn the most efficient path b
 
 ## Usage
 - Open **Campus Navigation Bot.ipynb** in Jupyter Notebook.
-- Run cells sequentially to train navigation algorithms.
+- Run the cells sequentially to train navigation models.
 - Modify `START` and `GOAL` coordinates to navigate between different grid points.
-- Visualizations will generate automatically for each algorithm.
+- Visualizations will auto-generate for each RL algorithm.
 
 ---
 
 ## Results & Visualization
-- Optimal path visualization using movement arrows.
-- Heatmaps of learned state values for:
+- Optimal navigation path visualization.
+- Heatmaps for learned values across algorithms:
   - **Q-Learning**
   - **SARSA**
+  - **TD(λ)**
   - **Monte Carlo Control**
-- Side-by-side comparison of **cost** and **steps**.
+- Comparison of **steps taken**, **path cost**, and **learning efficiency**
 
----
-
-## Example Screenshots
-(Add actual images after generating results.)
-
-```
-images/path_visualization.png
-images/value_heatmap.png
-```
-
----
 
 ## Future Improvements
-- GUI interface for interactive navigation.
-- Real campus map instead of grid model.
-- Multi-agent navigation.
-- Integration of advanced RL (DQN, Actor-Critic, PPO, etc.)
+- GUI system for interactive navigation
+- Real geographical campus map import
+- Multi-agent navigation
+- Additional RL methods (DQN, Actor-Critic, PPO, etc.)
 
 ---
 
